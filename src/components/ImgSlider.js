@@ -41,7 +41,7 @@ const Carousel = styled(Slider)`
   }
 
   .slick-list {
-    // overflow: visible;
+    overflow: visible;
   }
 
   button {
@@ -49,10 +49,17 @@ const Carousel = styled(Slider)`
   }
 `;
 const Wrap = styled.div`
+  cursor: pointer;
   img {
-    // border: 4px solid transparent;
+    border: 4px solid transparent;
     border-radius: 4px;
     width: 100%;
     height: 100%;
+    box-shadow: 0px 26px 30px -10px rgb(0 0 0 / 69%), 0px 16px 10px -10px rgb(0 0 0 / 73%);
+
+    &:hover {
+      border: 4px solid rgba(249, 249, 249, 0.8);
+    }
+  }
 `;
 export default ImgSlider;
